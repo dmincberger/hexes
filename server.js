@@ -10,7 +10,14 @@ const FileSystem = require("fs");
 app.use(express.static("dist"))
 
 app.get("/", function (req, res) {
-    res.sendFile("index.html")
+    const indexPath = path.join(__dirname, "index.html");
+    res.sendFile(indexPath);
+})
+
+app.get("/Hex", function (req, res) {
+    const hexPath = path.join(__dirname, "hex.html");
+    console.log(hexPath);
+    res.sendFile(hexPath);
 })
 
 app.post("/saveData", function (req, res) {

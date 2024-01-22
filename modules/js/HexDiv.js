@@ -23,7 +23,12 @@ export default class CustomDiv {
         this.div.style.position = "absolute"
         this.div.style.clipPath = "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)"
         this.div.style.textAlign = "center"
+        this.div.classList.add("test")
+        this.div.style.backgroundRepeat = "no-repeat"
         this.div.style.margin = "2px"
+        this.div.style.color = "red"
+        this.div.style.backgroundImage = 'url("./modules/gfx/strzalae.png")'
+        // this.div.classList.add("hexagon-container")
         this.div.id = this.identyfikator
     }
 

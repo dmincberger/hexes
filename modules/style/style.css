@@ -8,6 +8,16 @@ body {
     display: flex;
 }
 
+.hexagon-container::before {
+    border-bottom: 29px solid #3498db;
+    /* Match the background color */
+}
+
+.hexagon-container::after {
+    border-top: 29px solid #3498db;
+    /* Match the background color */
+}
+
 #sidebar {
     display: flex;
     flex-direction: column;
