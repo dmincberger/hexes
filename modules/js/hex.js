@@ -1,20 +1,9 @@
-import { Scene } from 'three';
-import Renderer from '../js3D/Renderer';
-import Camera from '../js3D/Camera';
-import Ico from '../js3D/Ico';
+import { GameObject } from '../js3D/Main.js';
+import { plansza } from "../js3D/plansza.js"
 
-const container = document.getElementById('root')
-const scene = new Scene()
-const renderer = new Renderer(scene, container)
-const camera = new Camera(renderer.threeRenderer)
-const ico = new Ico(scene)
+window.addEventListener("load", function () {
 
-const GameObject = {
-    render() {
-        console.log("render")
-        renderer.render(scene, camera.threeCamera);
-        ico.update()
-        requestAnimationFrame(GameObject.render);
-    }
-}
-export { GameObject }
+    plansza.generacja_plnaszy()
+
+    GameObject.render()
+})

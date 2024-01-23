@@ -1,3 +1,4 @@
+import obraz from "../gfx/strzalae.png"
 export default class CustomDiv {
 
     constructor(width, height, color, clippy_path, identyfikator) {
@@ -27,7 +28,7 @@ export default class CustomDiv {
         this.div.style.backgroundRepeat = "no-repeat"
         this.div.style.margin = "2px"
         this.div.style.color = "red"
-        this.div.style.backgroundImage = 'url("./modules/gfx/strzalae.png")'
+        this.div.style.backgroundImage = `url('${obraz}')`
         // this.div.classList.add("hexagon-container")
         this.div.id = this.identyfikator
     }

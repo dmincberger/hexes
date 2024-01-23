@@ -15,9 +15,8 @@ app.get("/", function (req, res) {
 })
 
 app.get("/Hex", function (req, res) {
-    const hexPath = path.join(__dirname, "hex.html");
-    console.log(hexPath);
-    res.sendFile(hexPath);
+    const indexPath = path.join(__dirname, "hex.html");
+    res.sendFile(indexPath)
 })
 
 app.post("/saveData", function (req, res) {

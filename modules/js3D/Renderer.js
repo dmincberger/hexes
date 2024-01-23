@@ -21,6 +21,5 @@ export default class Renderer {
 
     render(scene, camera) {
         this.threeRenderer.render(scene, camera);
-        console.log("render");
     }
 }

@@ -1,5 +1,4 @@
-import CustomDiv from "./modules/js/HexDiv.js"
-
+import CustomDiv from "./modules/js/HexDiv"
 const kolor = "gray"
 let sciezka = "clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)"
 
@@ -10,6 +9,7 @@ let server_load = document.getElementById("load")
 let server_save = document.getElementById("save")
 let json_file = document.getElementById("json_file")
 let json_text = document.getElementById("json_text")
+let hex_site = document.getElementById("hex")
 let prevhex
 let ukos
 
